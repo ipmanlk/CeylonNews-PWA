@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Malithi-Web";
+  src: url("../fonts/malithi_web.ttf");
+  font-weight: normal;
+}
+
+.sinhala-font {
+  font-family: "Malithi-Web";
+}
+
+.side-menu-img {
+  width: 100%;
+}
+
+.post-content {
+  font-size: 17px;
+}
+
+.post-content img {
+  width: 100%;
+  height: auto !important;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.modal-langselect div {
+  text-align: center;
+}
+
+.modal-langselect .ons-button {
+  width: 75%;
+  margin-bottom: 10px;
+}
+
+.news-list-footer {
+  margin: 10px 10px 20px 10px;
+}
+
+.modal-about div h4 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.modal-about div h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
