@@ -298,7 +298,7 @@ const showNewsList = () => {
         vars.currentPage = "news-list";
 
         // show load more button
-        if (vars.loadMore) {
+        if (vars.loadMore && !settings["st-news-list-autoload"]) {
             $("#btn-news-list-loadmore").fadeIn();
         }
 
@@ -355,7 +355,7 @@ const showTimedToast = (text, ms) => {
 }
 
 const setLoadMore = (isEnabled) => {
-    if (isEnabled) {
+    if (isEnabled && !settings["st-news-list-autoload"]) {
         $("#btn-news-list-loadmore").fadeIn();
     } else {
         $("#btn-news-list-loadmore").fadeOut();
