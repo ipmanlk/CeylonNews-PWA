@@ -14,17 +14,6 @@
     <script src="./lib/js/jquery.min.js"></script>
     <script src="./lib/js/onsenui.min.js"></script>
     <script src="./lib/js/imagesloaded.pkgd.min.js"></script>
-
-    <!-- pwa -->
-    <script src="./serviceWorker.js"></script>
-
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/serviceWorker.js')
-                .then(() => console.log("Service Worker Registered"))
-                .catch(e => console.log(e));
-        }
-    </script>
 </head>
 
 <body>

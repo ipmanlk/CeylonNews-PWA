@@ -1,3 +1,8 @@
+$(document).ready(() => {
+    //Register the service worker
+    navigator.serviceWorker.register("../serviceWorker.js");
+});
+
 ons.ready(() => init());
 
 const init = () => {
