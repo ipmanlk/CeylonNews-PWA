@@ -3,6 +3,11 @@ $(document).ready(() => {
     navigator.serviceWorker.register("../serviceWorker.js");
 });
 
+// handle globabl errors
+window.onerror = (message, source, lineno, colno, error) => {
+    console.log(error);
+}
+
 ons.ready(() => init());
 
 const init = () => {
