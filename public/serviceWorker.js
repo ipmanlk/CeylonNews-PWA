@@ -1,4 +1,4 @@
-const ceylonNewsCache = "ceylonNewsCacheV1";
+const ceylonNewsCache = "ceylonNewsCacheV2";
 
 self.addEventListener("install", (event) => {
     console.log("ServiceWorker installation successful");

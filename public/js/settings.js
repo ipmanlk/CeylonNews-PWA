@@ -30,7 +30,8 @@ const getDefaultSettings = () => {
         "st-news-post-title-justify": false,
         "st-news-post-body-justify": true,
         "st-news-post-body-lgfont": false,
-        "st-news-list-autoload": true
+        "st-news-list-autoload": true,
+        "st-news-list-card-ui": false
     };
 }
 
@@ -84,7 +85,11 @@ const applySettings = () => {
         }
 
         if (settings["st-sinhalafont"]) {
-            $(".list-item__title").addClass("sinhala-font");
+            if (settings["st-news-list-card-ui"]) {
+                $(".card-title").addClass("sinhala-font");
+            } else {
+                $(".list-item__title").addClass("sinhala-font");
+            }
         }
     }
 
