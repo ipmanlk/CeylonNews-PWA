@@ -146,12 +146,12 @@ const appendToNewsList = (newsList) => {
 
         if (settings["st-news-list-card-ui"]) {
             $("#ul-news-list").append(`
-            <ons-card id="${news.id}" onclick="loadNewsPost('${news.id}')">
+            <ons-card class="news-list-card" id="${news.id}" onclick="loadNewsPost('${news.id}')">
                 <img id="img${news.id}" src="./img/loading.gif" style="width: 100%">
-            <div class="title card-title">
+            <div class="title news-list-card-title">
                 ${news.title}
             </div>
-            <div class="content card-content">
+            <div class="content news-list-card-content">
                 ${news.source} - ${news.time}
             </div>
             </ons-card>  
